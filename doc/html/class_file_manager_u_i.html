@@ -21,9 +21,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">FileManager<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">FileManager<span id="projectnumber">&#160;1.1</span>
    </div>
-   <div id="projectbrief">Primitive comand line file manager</div>
   </td>
  </tr>
  </tbody>
@@ -61,24 +60,25 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
-<p>Provides a user interface to interact with the <a class="el" href="class_base_file_manager.html" title="Provides basic file management operations like listing, creating, deleting, renaming files and direct...">BaseFileManager</a> functionalities.  
+<p>User interface for interacting with the <a class="el" href="class_base_file_manager.html" title="Singleton class for managing file and directory operations.">BaseFileManager</a>.  
  <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_file_manager_u_i_8h_source.html">FileManagerUI.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab13afae4ce233ceaaf2b0fd111dd357f" id="r_ab13afae4ce233ceaaf2b0fd111dd357f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab13afae4ce233ceaaf2b0fd111dd357f">showMenu</a> ()</td></tr>
-<tr class="memdesc:ab13afae4ce233ceaaf2b0fd111dd357f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the main menu with options for file management.  <br /></td></tr>
-<tr class="separator:ab13afae4ce233ceaaf2b0fd111dd357f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62aa4a6c6fb26a19f5b2a51d1f7ac544" id="r_a62aa4a6c6fb26a19f5b2a51d1f7ac544"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62aa4a6c6fb26a19f5b2a51d1f7ac544">FileManagerUI</a> (<a class="el" href="class_base_file_manager.html">BaseFileManager</a> &amp;manager)</td></tr>
+<tr class="memdesc:a62aa4a6c6fb26a19f5b2a51d1f7ac544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the <a class="el" href="class_file_manager_u_i.html" title="User interface for interacting with the BaseFileManager.">FileManagerUI</a>.  <br /></td></tr>
+<tr class="separator:a62aa4a6c6fb26a19f5b2a51d1f7ac544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dfae75a702e5eee121e0a27d76ef141" id="r_a1dfae75a702e5eee121e0a27d76ef141"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dfae75a702e5eee121e0a27d76ef141">start</a> ()</td></tr>
-<tr class="memdesc:a1dfae75a702e5eee121e0a27d76ef141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the file manager UI and waits for user input to perform actions.  <br /></td></tr>
+<tr class="memdesc:a1dfae75a702e5eee121e0a27d76ef141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the interactive console UI.  <br /></td></tr>
 <tr class="separator:a1dfae75a702e5eee121e0a27d76ef141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides a user interface to interact with the <a class="el" href="class_base_file_manager.html" title="Provides basic file management operations like listing, creating, deleting, renaming files and direct...">BaseFileManager</a> functionalities. </p>
-<p>This class is responsible for displaying a menu, receiving user inputs, and calling appropriate methods in <a class="el" href="class_base_file_manager.html" title="Provides basic file management operations like listing, creating, deleting, renaming files and direct...">BaseFileManager</a> based on the user's selection. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab13afae4ce233ceaaf2b0fd111dd357f" name="ab13afae4ce233ceaaf2b0fd111dd357f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab13afae4ce233ceaaf2b0fd111dd357f">&#9670;&#160;</a></span>showMenu()</h2>
+<div class="textblock"><p>User interface for interacting with the <a class="el" href="class_base_file_manager.html" title="Singleton class for managing file and directory operations.">BaseFileManager</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a62aa4a6c6fb26a19f5b2a51d1f7ac544" name="a62aa4a6c6fb26a19f5b2a51d1f7ac544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62aa4a6c6fb26a19f5b2a51d1f7ac544">&#9670;&#160;</a></span>FileManagerUI()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -87,32 +87,37 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void FileManagerUI::showMenu </td>
+          <td class="memname">FileManagerUI::FileManagerUI </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_base_file_manager.html">BaseFileManager</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>manager</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Displays the main menu with options for file management. </p>
-<p>Prints a list of actions that the user can perform in the file manager. </p>
+<p>Constructs the <a class="el" href="class_file_manager_u_i.html" title="User interface for interacting with the BaseFileManager.">FileManagerUI</a>. </p>
+<p>Constructor for initializing the <a class="el" href="class_file_manager_u_i.html" title="User interface for interacting with the BaseFileManager.">FileManagerUI</a> with a <a class="el" href="class_base_file_manager.html" title="Singleton class for managing file and directory operations.">BaseFileManager</a> instance.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">manager</td><td>Reference to the <a class="el" href="class_base_file_manager.html" title="Singleton class for managing file and directory operations.">BaseFileManager</a> instance.</td></tr>
+    <tr><td class="paramname">manager</td><td>Reference to the <a class="el" href="class_base_file_manager.html" title="Singleton class for managing file and directory operations.">BaseFileManager</a> instance to interact with file system operations. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1dfae75a702e5eee121e0a27d76ef141" name="a1dfae75a702e5eee121e0a27d76ef141"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1dfae75a702e5eee121e0a27d76ef141">&#9670;&#160;</a></span>start()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void FileManagerUI::start </td>
@@ -121,20 +126,16 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Starts the file manager UI and waits for user input to perform actions. </p>
-<p>Repeatedly displays the menu, receives user choices, and executes the corresponding file management operations until the user chooses to exit. </p>
+<p>Starts the interactive console UI. </p>
+<p>Main loop to run the File Manager user interface. Displays menu options and processes user commands until the exit command is issued. </p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FileManager/FileManager/FileManager/<b>FileManager.cpp</b></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>D:/FileManager/FileManager/FileManager/<a class="el" href="_file_manager_u_i_8h_source.html">FileManagerUI.h</a></li>
+<li>D:/FileManager/FileManager/FileManager/<a class="el" href="_file_manager_u_i_8cpp.html">FileManagerUI.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
